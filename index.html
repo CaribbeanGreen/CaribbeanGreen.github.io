@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en-MY" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="dark light" />
+<meta name="theme-color" content="#050A06" id="tc" />
+
+<script>
+(function(){
+  var t = 'dark';
+  try { var s = localStorage.getItem('aiman-theme'); if (s === 'light' || s === 'dark') t = s; } catch(e){}
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+
+<title>Muhammad Aiman bin Jamaluddin — CS (Hons.) · AI, Data &amp; Software Engineering</title>
+<meta name="description" content="Portfolio of Muhammad Aiman bin Jamaluddin — Bachelor of Computer Science (Hons.) student at UiTM specializing in Machine Learning, Explainable AI, and Full-Stack Web Development. Seeking a 14-week internship (15 March – 18 June 2027)." />
+<meta name="author" content="Muhammad Aiman bin Jamaluddin" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23030804%22/><polygon points=%220,0 50,0 0,50%22 fill=%22%230d8a27%22/><polygon points=%2250,0 50,50 0,50%22 fill=%22%2316e03c%22/><polygon points=%2250,0 100,0 100,50%22 fill=%22%2316e03c%22/><polygon points=%2250,50 100,50 50,100%22 fill=%22%23095c1a%22/><polygon points=%220,50 50,50 50,100%22 fill=%22%2312b832%22/><polygon points=%2250,100 100,50 100,100%22 fill=%22%2316e03c%22/></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<canvas id="bg-mosaic" class="bg-mosaic" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <svg class="brand-mosaic" width="24" height="24" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="20" fill="#030804" stroke="#16e03c" stroke-width="6"/>
+        <polygon points="0,0 50,0 0,50" fill="#0d8a27"/>
+        <polygon points="50,0 50,50 0,50" fill="#16e03c"/>
+        <polygon points="50,0 100,0 100,50" fill="#16e03c"/>
+        <polygon points="50,50 100,50 50,100" fill="#095c1a"/>
+        <polygon points="0,50 50,50 50,100" fill="#12b832"/>
+        <polygon points="50,100 100,50 100,100" fill="#16e03c"/>
+      </svg>
+      Aiman<span>.</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#skills">Core &amp; Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#preview">Live Lab</a>
+      <a href="#experience">Experience &amp; Education</a>
+      <a href="#hire">Internship 2027</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.6M12 19v2.6M4.2 4.2l1.9 1.9M17.9 17.9l1.9 1.9M2.4 12h2.6M19 12h2.6M4.2 19.8l1.9-1.9M17.9 6.1l1.9-1.9"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+      </button>
+      <a href="assets/docs/Muhammad_Aiman_Jamaluddin_Resume.pdf" target="_blank" rel="noopener" class="btn">Resume PDF</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero wrap">
+  <div class="hero-in">
+    <div>
+      <p class="eyebrow rise">Muhammad Aiman bin Jamaluddin · Bachelor of Computer Science (Hons.)</p>
+      <h1 class="rise">Machine Learning,<br>Explainable AI &amp;<br><em>Full-Stack Systems.</em></h1>
+      <p class="hero-sub rise">
+        Computer Science (Hons.) student at <strong>UiTM</strong> with prior industry internship experience and hands-on work in <strong>machine learning</strong>, <strong>explainable AI</strong>, and <strong>full-stack web development</strong>. Seeking a 14-week <strong>Software, Data, or AI Intern</strong> placement from <strong>15 March to 18 June 2027</strong>.
+      </p>
+      <div class="hero-cta rise">
+        <a href="#projects" class="btn">Explore Projects ↓</a>
+        <a href="#preview" class="btn btn-ghost">Try Interactive AI Demos</a>
+        <a href="assets/docs/Muhammad_Aiman_Jamaluddin_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Download Resume (PDF)</a>
+      </div>
+      <div class="hero-meta rise">
+        <span><span class="dot"></span>Internship: 15 Mar – 18 Jun 2027</span>
+        <span>Klang Valley &amp; Kuantan</span>
+        <span>aiman_jamaluddin@outlook.com</span>
+        <span>+60 11-3991 0856</span>
+      </div>
+    </div>
+
+    <figure class="hero-me rise">
+      <img src="assets/profile.jpg"
+           alt="Muhammad Aiman bin Jamaluddin"
+           width="260" height="312" decoding="async" fetchpriority="high">
+      <figcaption>
+        <b>Muhammad Aiman bin Jamaluddin</b>
+        UiTM Computer Science (Hons.) · @CaribbeanGreen
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= PROOF METRICS ================= -->
+<section class="wrap" style="padding-bottom: 24px;">
+  <div class="stats rise">
+    <div class="stat"><div class="n" data-count="2200" data-suffix="k+">0</div><div class="k">KTMB ETS trip records modeled</div></div>
+    <div class="stat"><div class="n">4.1%</div><div class="k">Network MAPE (vs 6.4% baseline)</div></div>
+    <div class="stat"><div class="n">0.92</div><div class="k">AUC on fine-tuned PyTorch LaBSE</div></div>
+    <div class="stat"><div class="n">3.25</div><div class="k">Diploma CGPA · Dean's List</div></div>
+  </div>
+</section>
+
+<!-- ================= CORE FOCUS & TECHNICAL SKILLS ================= -->
+<section class="sec wrap" id="skills">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow rise">Core Focus &amp; Technical Stack</p>
+      <h2 class="rise">AI &amp; Data Science at the core. Full-stack ready.</h2>
+    </div>
+    <p class="rise">Structured directly around the technologies, research tools, and engineering domains from my academic and industry work.</p>
+  </div>
+
+  <!-- Core Specialty Banner (AI, Machine Learning & Data) -->
+  <div class="core-banner rise">
+    <div>
+      <span class="core-badge">★ Core Engineering Focus</span>
+      <h3>AI, Machine Learning &amp; Data Science</h3>
+      <p>
+        For data science, ML engineering, or analytics teams building forecasting, NLP, or explainable AI pipelines. Proven on <strong>2.2M+ rows</strong> of real-world Malaysian transport data and an <strong>11,000-text</strong> literary corpus.
+      </p>
+    </div>
+    <ul class="core-points">
+      <li><strong>Random Forest &amp; TreeSHAP</strong> implemented from scratch in pure NumPy and verified against brute-force Shapley values</li>
+      <li><strong>PyTorch contrastive fine-tuning</strong> with Hugging Face sentence-transformers (LaBSE, raising held-out AUC from 0.65 to 0.92)</li>
+      <li><strong>Local LLM (Gemma) &amp; Gemini API</strong> evaluation pipelines for semantic scoring</li>
+      <li>Interactive data dashboards with <strong>pandas, scikit-learn, Streamlit and hand-written HTML/JS</strong></li>
+      <li>Grade <strong>A</strong> in CSC649 Special Topics in CS &amp; <strong>A-</strong> in CSP600 Project Formulation</li>
+    </ul>
+  </div>
+
+  <!-- 6 Resume-Matched Skill Categories -->
+  <div class="skills-matrix">
+    <div class="skill-group rise">
+      <span class="sg-label">01 / Languages</span>
+      <h4>Programming</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">Python</span>
+        <span class="pill hi">Java</span>
+        <span class="pill hi">PHP</span>
+        <span class="pill hi">SQL</span>
+        <span class="pill hi">JavaScript</span>
+        <span class="pill">C++</span>
+      </div>
+    </div>
+
+    <div class="skill-group rise">
+      <span class="sg-label">02 / Core Domain</span>
+      <h4>Machine Learning &amp; AI</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">scikit-learn</span>
+        <span class="pill hi">Random Forest</span>
+        <span class="pill hi">SHAP / TreeSHAP</span>
+        <span class="pill hi">PyTorch</span>
+        <span class="pill hi">pandas &amp; NumPy</span>
+        <span class="pill">Hugging Face (LaBSE)</span>
+        <span class="pill">Gemma (Local LLM)</span>
+        <span class="pill">Gemini</span>
+      </div>
+    </div>
+
+    <div class="skill-group rise">
+      <span class="sg-label">03 / Full-Stack</span>
+      <h4>Web Development</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">PHP &amp; CodeIgniter</span>
+        <span class="pill hi">Java (Jakarta EE 10)</span>
+        <span class="pill hi">JSP &amp; Servlets</span>
+        <span class="pill hi">MySQL &amp; Oracle SQL</span>
+        <span class="pill">HTML / CSS / Bootstrap</span>
+        <span class="pill">JavaScript (PWA)</span>
+        <span class="pill">GlassFish &amp; XAMPP</span>
+      </div>
+    </div>
+
+    <div class="skill-group rise">
+      <span class="sg-label">04 / Environment</span>
+      <h4>Tools &amp; Analytics</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">Git &amp; GitHub</span>
+        <span class="pill hi">Streamlit</span>
+        <span class="pill hi">Jupyter</span>
+        <span class="pill">Linux</span>
+        <span class="pill">Microsoft Excel (Basic)</span>
+        <span class="pill">Power BI (Learning)</span>
+        <span class="pill">NotebookLM</span>
+      </div>
+    </div>
+
+    <div class="skill-group rise">
+      <span class="sg-label">05 / Creative &amp; IT</span>
+      <h4>Design &amp; Hardware</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">PC, Laptop &amp; Printer Repair</span>
+        <span class="pill">OS Formatting &amp; Setup</span>
+        <span class="pill">Adobe Photoshop</span>
+        <span class="pill">Premiere Pro</span>
+        <span class="pill">Canva &amp; CapCut</span>
+      </div>
+    </div>
+
+    <div class="skill-group rise">
+      <span class="sg-label">06 / Research &amp; Spoken</span>
+      <h4>Research &amp; Languages</h4>
+      <div class="pill-wrap">
+        <span class="pill hi">Bahasa Melayu (Native)</span>
+        <span class="pill hi">English (Fluent · MUET Band 4.0)</span>
+        <span class="pill">Scopus &amp; Mendeley</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS (MATCHING RESUME) ================= -->
+<section class="sec wrap" id="projects">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow rise">Shipped Work &amp; Research</p>
+      <h2 class="rise">Featured Projects</h2>
+    </div>
+    <p class="rise">Every project below links directly to its source repository or technical documentation.</p>
+  </div>
+
+  <!-- 1. Final Year Project: KTMB ETS Ridership XAI -->
+  <article class="fyp-card rise">
+    <div class="fyp-visual">
+      <div>
+        <span class="flag warm">Final Year Project · 2026</span>
+        <h3 style="font-size:26px;margin-top:14px;color:#fff">KTMB ETS Ridership Surge Prediction &amp; TreeSHAP Engine</h3>
+        <p style="margin-top:10px;font-size:14px;color:#98B09D">
+          Python · NumPy · TreeSHAP · pandas · Open-Meteo API · HTML/CSS/JS dashboard
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="background:rgba(0,0,0,0.35);padding:14px;border-radius:10px;border:1px solid var(--line)">
+          <div style="font-family:var(--display);font-size:26px;font-weight:800;color:var(--accent)">4.1% MAPE</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">vs 6.4% naive baseline</div>
+        </div>
+        <div style="background:rgba(0,0,0,0.35);padding:14px;border-radius:10px;border:1px solid var(--line)">
+          <div style="font-family:var(--display);font-size:26px;font-weight:800;color:var(--gold)">6.7% Festive</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">vs 9.4% festive baseline</div>
+        </div>
+      </div>
+    </div>
+    <div class="fyp-body">
+      <span class="eyebrow">01 / Explainable Machine Learning</span>
+      <h3>Explainable Random Forest for KTMB ETS Ridership Surge Prediction</h3>
+      <ul class="resume-bullets">
+        <li>Implemented a <strong>Random Forest from scratch in NumPy</strong>, forecasting daily ridership across 21 districts on <strong>2.2M hourly trip records (2023–2026)</strong> joined with Malaysia public holidays, DOSM demographics, and Open-Meteo weather.</li>
+        <li>Cut network-level forecast error to <strong>4.1% MAPE</strong> on May–Dec 2025 test data vs <strong>6.4%</strong> naive baseline (<strong>6.7% vs 9.4%</strong> on festive days).</li>
+        <li>Explained every prediction with <strong>TreeSHAP</strong> (also written from scratch in NumPy) verified against brute-force Shapley values; showed festive weeks and holiday eves raise ridership while Ramadan lowers it.</li>
+        <li>Built a live web dashboard with 2026 holdout evaluation, live weather fetch, and SHAP feature-contribution charts.</li>
+      </ul>
+      <div class="proj-links">
+        <a href="https://github.com/CaribbeanGreen/KTMB-ETS-Ridership-XAI" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        <a href="assets/docs/KTMB_ETS_Ridership_XAI_Slides.pdf" target="_blank" rel="noopener">Presentation Slides (PDF) ↗</a>
+        <a href="#preview" data-jump-chip="xai">Test Live Simulator ↓</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 2 & 3: Pantun Coherence + PulseLift PWA -->
+  <div class="proj-grid-2">
+    <article class="proj-card rise">
+      <div class="shotbar"><i></i><i></i><i></i><span>github.com/CaribbeanGreen/pantun-coherence</span></div>
+      <div class="proj-body">
+        <div class="proj-meta-top">
+          <span class="flag">0.65 → 0.92 AUC · NLP &amp; Deep Learning</span>
+          <span class="proj-year">2026 · Group Project</span>
+        </div>
+        <h3>Pantun Pembayang–Maksud Coherence Analysis</h3>
+        <ul class="resume-bullets">
+          <li>Built a corpus of <strong>~11,000 Malay pantun</strong> from published anthologies and scored <em>pembayang–maksud</em> coherence using five multilingual embedding models, rhyme rules, and LLM judges.</li>
+          <li>Fine-tuned <strong>LaBSE with PyTorch (contrastive loss)</strong>, raising AUC for distinguishing real from shuffled pantun from <strong>0.65 to 0.92</strong> on held-out data (LLM judges scored near chance, 0.50–0.53).</li>
+          <li>Built a multi-role <strong>Streamlit demo</strong> with tailored views for students, lecturers, and researchers.</li>
+        </ul>
+        <div class="tags">
+          <i>Python</i><i>PyTorch</i><i>Hugging Face (LaBSE)</i><i>Gemma</i><i>Gemini</i><i>Streamlit</i>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/CaribbeanGreen/pantun-coherence" target="_blank" rel="noopener">GitHub Repository ↗</a>
+          <a href="#preview" data-jump-chip="pantun">Try Live Scorer ↓</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card rise">
+      <div class="shotbar"><i></i><i></i><i></i><span>github.com/CaribbeanGreen/PulseLift-Workout-Tracker</span></div>
+      <div class="proj-body">
+        <div class="proj-meta-top">
+          <span class="flag warm">Zero External 3D Libraries · PWA</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3>PulseLift – Workout Tracker Web App</h3>
+        <ul class="resume-bullets">
+          <li>Built an installable, offline-capable <strong>Progressive Web App</strong> for a 2-day full-body routine with weight and rep logging, workout history, and a rest timer.</li>
+          <li>Rendered interactive <strong>3D anatomical models in plain JavaScript</strong> (no external libraries) that rotate 360° and highlight the specific muscles each exercise targets.</li>
+        </ul>
+        <div class="tags">
+          <i>HTML</i><i>CSS</i><i>JavaScript (PWA)</i><i>WebGL</i>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/CaribbeanGreen/PulseLift-Workout-Tracker" target="_blank" rel="noopener">GitHub Repository ↗</a>
+          <a href="#preview" data-jump-chip="pulselift">Interact with 3D Mesh ↓</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- 4 & 5: ChateauFido + Home Server Linux NAS -->
+  <div class="proj-grid-2" style="margin-top:22px">
+    <article class="proj-card rise">
+      <div class="shotbar"><i></i><i></i><i></i><span>github.com/CaribbeanGreen/ChateauFido</span></div>
+      <div class="proj-body">
+        <div class="proj-meta-top">
+          <span class="flag">Enterprise Java · Grade A+</span>
+          <span class="proj-year">2026 · Group Project</span>
+        </div>
+        <h3>ChateauFido – Dog Hotel Booking System</h3>
+        <ul class="resume-bullets">
+          <li>Built a full-stack pet-hotel booking web application featuring customer registration, dog profiles, room booking, and receipts.</li>
+          <li>Engineered a complete admin dashboard for bookings, reservations, rooms, and inventory across <strong>44 Java classes and 24 JSP pages</strong>.</li>
+        </ul>
+        <div class="tags">
+          <i>Java (Jakarta EE 10)</i><i>JSP</i><i>Servlets</i><i>MySQL</i><i>GlassFish</i>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/CaribbeanGreen/ChateauFido" target="_blank" rel="noopener">GitHub Repository ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card rise">
+      <div class="shotbar"><i></i><i></i><i></i><span>Home Server · Self-Hosted Infrastructure</span></div>
+      <div class="proj-body">
+        <div class="proj-meta-top">
+          <span class="flag">Linux &amp; Networking</span>
+          <span class="proj-year">2026 · Personal Project</span>
+        </div>
+        <h3>Home Server: Self-Hosted Linux NAS &amp; Game Server</h3>
+        <ul class="resume-bullets">
+          <li>Converted a Dell OptiPlex into a <strong>self-hosted Linux NAS</strong> that replaces Google Drive for personal file storage.</li>
+          <li>Configured network shares and hosts dedicated multiplayer <strong>Minecraft and Palworld</strong> game servers.</li>
+        </ul>
+        <div class="tags">
+          <i>Linux</i><i>Networking</i><i>NAS File Storage</i><i>Server Administration</i>
+        </div>
+        <div class="proj-links">
+          <span style="color:var(--text-muted)">Self-Hosted Hardware Deployment</span>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Additional Open-Source & Coursework Systems -->
+  <div class="more rise">
+    <a class="more-row" href="assets/docs/CSC569_Recursive_Descent_Parser_Report.pdf" target="_blank" rel="noopener">
+      <h4>LL(1) Recursive Descent Parser (Latin &amp; Arabic Script)</h4>
+      <p>Extended Grammar G17 to 10 LL(1) rules supporting Latin and Arabic arithmetic operators with a Java Swing GUI &amp; SableCC lexer.</p>
+      <span class="k">Java · Compiler Report PDF ↗</span>
+    </a>
+    <a class="more-row" href="https://github.com/CaribbeanGreen/City-Bakery-Inventory" target="_blank" rel="noopener">
+      <h4>City Bakery Inventory &amp; Ordering System</h4>
+      <p>Multi-branch bakery stock tracking and customer ordering web application.</p>
+      <span class="k">PHP · Oracle SQL ↗</span>
+    </a>
+    <a class="more-row" href="https://github.com/CaribbeanGreen/KTMB-Surge-Predictor" target="_blank" rel="noopener">
+      <h4>KTMB Passenger Surge Predictor (CSC649 Prototype)</h4>
+      <p>Interactive Streamlit forecasting prototype with live OpenWeatherMap weather fetch and route explorer.</p>
+      <span class="k">Python · Streamlit ↗</span>
+    </a>
+    <a class="more-row" href="https://github.com/CaribbeanGreen/Library-Book-Management-System" target="_blank" rel="noopener">
+      <h4>Library Book Management System</h4>
+      <p>Full-stack library catalog, borrowing workflows, and admin portal.</p>
+      <span class="k">PHP · MySQL ↗</span>
+    </a>
+    <a class="more-row" href="https://github.com/CaribbeanGreen/html-tools" target="_blank" rel="noopener">
+      <h4>Single-File Browser Tools (IC A4 Layout &amp; Trackers)</h4>
+      <p>Zero-dependency browser utilities for A4 IC printing layouts and interactive item tracking.</p>
+      <span class="k">HTML · Vanilla JS ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= INTERACTIVE ENGINEERING LAB ================= -->
+<section class="sec wrap" id="preview">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow rise">Interactive Engineering Lab</p>
+      <h2 class="rise">Test My Models Live in Your Browser</h2>
+    </div>
+    <p class="rise">Switch tabs below to run interactive versions of my Final Year Project, NLP model, 3D PWA engine, and LL(1) compiler.</p>
+  </div>
+
+  <div class="picker rise" role="tablist" aria-label="Interactive project selector">
+    <button class="chip" role="tab" data-key="xai" aria-selected="true">01 · KTMB ETS TreeSHAP</button>
+    <button class="chip" role="tab" data-key="pantun" aria-selected="false">02 · Pantun LaBSE Coherence</button>
+    <button class="chip" role="tab" data-key="pulselift" aria-selected="false">03 · PulseLift 3D Muscle PWA</button>
+    <button class="chip" role="tab" data-key="parser" aria-selected="false">04 · LL(1) Arabic &amp; Latin Parser</button>
+  </div>
+
+  <div class="stage rise">
+    <div class="chrome">
+      <div class="chrome-tabs" aria-hidden="true">
+        <span class="tabs-dots"><i></i><i></i><i></i></span>
+        <span class="tab"><span class="fav" id="b-fav"></span><b id="b-tab">KTMB ETS Ridership XAI</b><span class="x">×</span></span>
+        <span class="tab-new">+</span>
+      </div>
+      <div class="chrome-bar" aria-hidden="true">
+        <span class="nav-arrows"><span>←</span><span>→</span><span>↻</span></span>
+        <span class="url">
+          <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg>
+          https://github.com/CaribbeanGreen/<b id="b-url">KTMB-ETS-Ridership-XAI</b>
+        </span>
+      </div>
+
+      <!-- View 1: KTMB ETS TreeSHAP Simulator -->
+      <div class="wb-view active" id="view-xai">
+        <div class="wb-top">
+          <div>
+            <span class="wb-badge">Random Forest + TreeSHAP · Pure NumPy</span>
+            <h3 style="margin-top:8px;font-size:21px">Hourly Ridership &amp; Additive Shapley Attribution</h3>
+          </div>
+          <div style="text-align:right">
+            <div class="wb-kpi" id="xaiPredValue">1,248 pax/hr</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#94A3B8">Base E[f(X)]: 880 pax · Test MAPE: 4.1%</div>
+          </div>
+        </div>
+
+        <div class="wb-grid">
+          <div class="wb-box">
+            <h4>Scenario &amp; Weather Inputs</h4>
+            <div class="mini-pills">
+              <button type="button" class="mini-pill" data-xai-preset="raya">Hari Raya Eve (18:00)</button>
+              <button type="button" class="mini-pill" data-xai-preset="commute">Friday Peak (17:00)</button>
+              <button type="button" class="mini-pill" data-xai-preset="ramadan">Ramadan (12:00)</button>
+              <button type="button" class="mini-pill" data-xai-preset="night">Late Night (23:00)</button>
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Departure Hour (85% RF importance)</span><b id="xaiHourVal">17:00</b></div>
+              <input type="range" id="xaiHour" min="5" max="23" value="17" />
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Day &amp; Calendar Regime</span></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                <select id="xaiDay">
+                  <option value="0">Monday</option>
+                  <option value="1">Tuesday</option>
+                  <option value="2">Wednesday</option>
+                  <option value="3">Thursday</option>
+                  <option value="4" selected>Friday</option>
+                  <option value="5">Saturday</option>
+                  <option value="6">Sunday</option>
+                </select>
+                <select id="xaiSeason">
+                  <option value="normal">Normal Week</option>
+                  <option value="festive" selected>Festive / Holiday Eve</option>
+                  <option value="school">School Holiday</option>
+                  <option value="ramadan">Ramadan Month</option>
+                </select>
+              </div>
+            </div>
+            <div class="ctrl-row" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+              <div>
+                <div class="ctrl-lbl"><span>Temp</span><b id="xaiTempVal">31°C</b></div>
+                <input type="range" id="xaiTemp" min="22" max="36" value="31" />
+              </div>
+              <div>
+                <div class="ctrl-lbl"><span>Rain</span><b id="xaiRainVal">2 mm</b></div>
+                <input type="range" id="xaiRain" min="0" max="45" value="2" />
+              </div>
+            </div>
+          </div>
+
+          <div class="wb-box">
+            <h4>Exact TreeSHAP Contributions (φ₀ + Σφᵢ = f(x))</h4>
+            <div class="shap-bars" id="xaiShapBars"></div>
+            <p style="margin-top:14px;font-size:12px;color:#94A3B8;line-height:1.45">
+              Trained on 2.2M+ hourly trip records across 21 districts joined with DOSM demographics &amp; Open-Meteo weather. Verified against brute-force Shapley enumeration.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- View 2: Pantun Pembayang-Maksud Coherence -->
+      <div class="wb-view" id="view-pantun">
+        <div class="wb-top">
+          <div>
+            <span class="wb-badge">Contrastive PyTorch LaBSE · 11,000 Pantun Corpus</span>
+            <h3 style="margin-top:8px;font-size:21px">Malay Pantun Pembayang–Maksud Coherence Scorer</h3>
+          </div>
+          <div style="text-align:right">
+            <div class="wb-kpi" id="pantunScoreVal">0.91 Coherence</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#94A3B8" id="pantunVerdict">Held-out AUC: 0.92 (vs 0.52 LLM Judge)</div>
+          </div>
+        </div>
+
+        <div class="wb-grid">
+          <div class="wb-box">
+            <h4>Sample or Edit Pantun Couplets</h4>
+            <div class="mini-pills">
+              <button type="button" class="mini-pill" data-pantun-preset="classic">Pulau Pandan (Authentic)</button>
+              <button type="button" class="mini-pill" data-pantun-preset="nature">Pisang Emas (Authentic)</button>
+              <button type="button" class="mini-pill" data-pantun-preset="shuffled">Shuffled Foil (Negative)</button>
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Pembayang (Lines 1–2)</span></div>
+              <textarea id="pantunPembayang" rows="2">Pulau Pandan jauh ke tengah,
+Gunung Daik bercabang tiga;</textarea>
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Maksud (Lines 3–4)</span></div>
+              <textarea id="pantunMaksud" rows="2">Hancur badan dikandung tanah,
+Budi yang baik dikenang juga.</textarea>
+            </div>
+            <button type="button" id="runPantunBtn" class="mini-pill" style="width:100%;padding:8px;background:#18E63E;color:#030A04;font-weight:600;border:0">Score Coherence &amp; Rhyme</button>
+          </div>
+
+          <div class="wb-box">
+            <h4>Model &amp; Prosody Breakdown</h4>
+            <div class="shap-bars" id="pantunMetrics"></div>
+            <div class="trace-console" id="pantunAnalysisLog" style="margin-top:12px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View 3: PulseLift 3D Anatomical Muscle Engine -->
+      <div class="wb-view" id="view-pulselift">
+        <div class="wb-top">
+          <div>
+            <span class="wb-badge">Custom WebGL 3D Engine · 2-Bone IK &amp; Thermal Shaders</span>
+            <h3 style="margin-top:8px;font-size:21px">PulseLift 360° Anatomical Mannequin &amp; Muscle Glow</h3>
+          </div>
+          <div style="text-align:right">
+            <div class="wb-kpi" id="plActiveGroup">Pectoralis Major &amp; Anterior Delts</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#94A3B8">Real-Time WebGL GLSL · 0 External 3D Libraries</div>
+          </div>
+        </div>
+
+        <div class="wb-grid">
+          <div class="wb-box">
+            <h4>Select Exercise Pose (2-Bone IK)</h4>
+            <div class="mini-pills">
+              <button type="button" class="mini-pill" data-pl-ex="bench">Barbell Bench Press</button>
+              <button type="button" class="mini-pill" data-pl-ex="squat">Barbell Back Squat</button>
+              <button type="button" class="mini-pill" data-pl-ex="row">Pendlay Barbell Row</button>
+              <button type="button" class="mini-pill" data-pl-ex="ohp">Overhead Press</button>
+              <button type="button" class="mini-pill" data-pl-ex="rdl">Romanian Deadlift</button>
+              <button type="button" class="mini-pill" data-pl-ex="pullup">Bodyweight Pull-Up</button>
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Orbit 360° Camera (or drag 3D model)</span><b id="plAngleVal">Auto-Rotate</b></div>
+              <input type="range" id="plAngle" min="0" max="360" value="38" />
+            </div>
+            <div class="trace-console" id="plWorkoutLog" style="margin-top:10px">
+              <div class="trace-ok">▸ Barbell Bench Press · Primary: Pectoralis Major, Triceps Brachii, Anterior Deltoids</div>
+              <div>Drag on the 3D athlete to orbit, scroll to zoom, or hover any muscle to spotlight it.</div>
+            </div>
+          </div>
+
+          <div class="wb-box" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px">
+            <canvas id="plCanvas" style="width:100%;height:265px;border-radius:10px;background:#1e252e;cursor:grab;display:block"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- View 4: LL(1) Recursive Descent Parser -->
+      <div class="wb-view" id="view-parser">
+        <div class="wb-top">
+          <div>
+            <span class="wb-badge">Extended G17 Grammar · 10 Production Rules</span>
+            <h3 style="margin-top:8px;font-size:21px">LL(1) Latin &amp; Arabic-Script Arithmetic Parser</h3>
+          </div>
+          <div style="text-align:right">
+            <div class="wb-kpi" id="parserStatusVal">ACCEPTED</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#94A3B8" id="parserStatusSub">Zero backtracking · Disjoint Selection Sets</div>
+          </div>
+        </div>
+
+        <div class="wb-grid">
+          <div class="wb-box">
+            <h4>Token Stream Input</h4>
+            <div class="mini-pills">
+              <button type="button" class="mini-pill" data-parser-preset="3*(4+2)/2-1">3*(4+2)/2-1</button>
+              <button type="button" class="mini-pill" data-parser-preset="7+ب">7+ب (Arabic var)</button>
+              <button type="button" class="mini-pill" data-parser-preset="(بض4)و9ق3">(بض4)و9ق3 (Arabic ops)</button>
+              <button type="button" class="mini-pill" data-parser-preset="5++3">5++3 (Error)</button>
+            </div>
+            <div class="ctrl-row">
+              <div class="ctrl-lbl"><span>Expression (+ - * / or و ط ض ق غ and ب)</span></div>
+              <input type="text" id="parserInput" value="3*(4+2)/2-1" style="font-family:var(--mono)" />
+            </div>
+            <button type="button" id="runParserBtn" class="mini-pill" style="width:100%;padding:8px;background:#18E63E;color:#030A04;font-weight:600;border:0;margin-top:6px">Run Recursive Descent Trace</button>
+          </div>
+
+          <div class="wb-box">
+            <h4>Step-by-Step Derivation Trace</h4>
+            <div class="trace-console" id="parserTraceLog"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="spec">
+      <h4>What's under the hood</h4>
+      <ul id="d-spec"></ul>
+      <div class="line"><span>Scale / Scope</span><b id="d-time">2.2M+ trip records</b></div>
+      <div class="line" style="margin-top:0;padding-top:12px;border:0"><span>Built with</span><b id="d-stack">Python · NumPy · HTML/CSS/JS</b></div>
+      <a href="https://github.com/CaribbeanGreen/KTMB-ETS-Ridership-XAI" id="d-link" target="_blank" rel="noopener" class="btn">Inspect source on GitHub ↗</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= WORK EXPERIENCE & EDUCATION (MATCHING RESUME) ================= -->
+<section class="sec wrap" id="experience">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow rise">Track Record</p>
+      <h2 class="rise">Work Experience &amp; Education</h2>
+    </div>
+    <p class="rise">Prior 6-month industry internship in software development &amp; IT support alongside Computer Science training at UiTM.</p>
+  </div>
+
+  <!-- Work Experience: Eden Hafiz Group PLT -->
+  <article class="exp-card rise">
+    <div class="exp-top">
+      <div>
+        <span class="eyebrow">Work Experience</span>
+        <h3 class="exp-role" style="margin-top:6px">Eden Hafiz Group PLT — IT Intern</h3>
+        <div class="exp-company">Kuantan, Pahang · Computer and IT equipment sales and repair</div>
+      </div>
+      <span class="exp-date">Sep 2024 – Feb 2025</span>
+    </div>
+    <ul class="resume-bullets" style="margin-top:18px">
+      <li>Co-developed <strong>EdenHR</strong>, a web-based HR management system (PHP, CodeIgniter, Bootstrap, MySQL) covering employee records, attendance, leave, payroll, and company notices.</li>
+      <li>Produced full system design documentation (<strong>Context Diagram, DFD, ERD, relational schema</strong>) and wrote and executed test cases across <strong>9 system modules</strong>.</li>
+      <li>Diagnosed and repaired printers, desktops, and laptops; formatted machines and installed software for customers across <strong>3 branches</strong>.</li>
+      <li>Created promotional posters and videos using <strong>Photoshop, Premiere Pro, Canva, and CapCut</strong>; supported Unifi promotion events and in-store laptop sales.</li>
+    </ul>
+  </article>
+
+  <!-- Education: Degree & Diploma -->
+  <div class="edu-grid">
+    <article class="exp-card rise">
+      <div class="exp-top">
+        <div>
+          <span class="eyebrow">Degree</span>
+          <h3 class="exp-role" style="margin-top:6px">Bachelor of Computer Science (Hons.)</h3>
+          <div class="exp-company">Universiti Teknologi MARA (UiTM), Kampus Kuala Terengganu</div>
+        </div>
+        <span class="exp-date">Mar 2025 – Expected Jun 2027</span>
+      </div>
+      <ul class="resume-bullets" style="margin-top:16px">
+        <li><strong>CGPA: 3.04</strong> (Latest Semester GPA: <strong>3.19</strong>)</li>
+        <li><strong>Top Coursework Grades:</strong> Enterprise Programming (<strong>A+</strong>), Special Topics in Computer Science / XAI (<strong>A</strong>), Software Engineering (<strong>A-</strong>), Project Formulation (<strong>A-</strong>), Technology Entrepreneurship (<strong>A-</strong>), Artificial Intelligence (<strong>B+</strong>).</li>
+      </ul>
+    </article>
+
+    <article class="exp-card rise">
+      <div class="exp-top">
+        <div>
+          <span class="eyebrow">Diploma</span>
+          <h3 class="exp-role" style="margin-top:6px">Diploma in Computer Science</h3>
+          <div class="exp-company">Universiti Teknologi MARA (UiTM), Kampus Raub</div>
+        </div>
+        <span class="exp-date">Oct 2022 – Feb 2025</span>
+      </div>
+      <ul class="resume-bullets" style="margin-top:16px">
+        <li><strong>CGPA: 3.25</strong></li>
+        <li><strong>Dean's List Award</strong>, Semester 1 (<strong>GPA: 3.52</strong>)</li>
+        <li><strong>MUET Band 4.0</strong> (CEFR B2 Competent User, 2024)</li>
+      </ul>
+    </article>
+  </div>
+
+  <!-- Certifications & Co-Curricular -->
+  <div class="cert-strip rise">
+    <span class="eyebrow">Certifications &amp; Co-Curricular</span>
+    <h3 style="font-size:22px;margin-top:8px">Verified Technical Certificates &amp; 80+ University Programmes</h3>
+    <ul class="resume-bullets" style="margin-top:12px">
+      <li><strong>Certification Course: Web-Based System Development (Level 2 – Intermediate)</strong>, FSKM, UiTM (Jul 2026)</li>
+      <li><strong>Certification Course: Web-Based System Development (Level 1 – Beginner)</strong>, FSKM, UiTM (Jun 2026)</li>
+      <li><strong>Active participant in 80+ university programmes &amp; workshops (2025–2026)</strong>, including <em>AI Unlocked: Exploring the Future of AI</em> (UiTM Library, Oct 2026), <em>Smart System Engineering with IoT: Concept to Implementation</em> (FSKM, Jun 2026), <em>Elevate &amp; Connect: Resume &amp; LinkedIn Workshop</em> (Jun 2026), <em>Webinar Session with International Industry Expert</em> (FSKM, May 2026), <em>The Campus AI Roadshow: Elevate Your Learning Journey with NotebookLM</em> (Awantec &amp; Google Cloud, Apr 2026), and <em>Scopus AI Literature Search</em> (Apr 2026).</li>
+    </ul>
+    <div class="cert-links">
+      <a href="assets/certs/Web_System_Dev_Level_2.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Web Dev Level 2 (PDF) ↗</a>
+      <a href="assets/certs/Web_System_Dev_Level_1.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Web Dev Level 1 (PDF) ↗</a>
+      <a href="assets/certs/Campus_AI_Roadshow_NotebookLM.pdf" target="_blank" rel="noopener" class="btn btn-ghost">NotebookLM Roadshow (PDF) ↗</a>
+      <a href="assets/certs/Smart_System_Engineering_IoT.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Smart System IoT (PDF) ↗</a>
+      <a href="assets/certs/Navigating_AI_Real_World.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Navigating AI (PDF) ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIAL TRAINING (CST688) & CONTACT ================= -->
+<section class="sec wrap" id="hire">
+  <div class="hire-card rise">
+    <div class="hire-in">
+      <div>
+        <span class="eyebrow" style="color:#6EE7B7">For Hiring Managers &amp; HR (CST688)</span>
+        <h2>Seeking a 14-week internship, 15 March – 18 June 2027.</h2>
+        <p>
+          Available for <strong>Software, Data, or AI Intern</strong> roles in the <strong>Klang Valley (Shah Alam / Kuala Lumpur)</strong> or <strong>Kuantan, Pahang</strong>. All official UiTM placement documents, resumes, and industrial training objectives are ready for immediate download below.
+        </p>
+        <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="assets/docs/Muhammad_Aiman_Jamaluddin_Resume.pdf" target="_blank" rel="noopener" class="btn">Resume (PDF)</a>
+          <a href="assets/docs/Surat_Permohonan_LI.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Official UiTM Letter</a>
+          <a href="assets/docs/DL01_Industrial_Training_Objectives.pdf" target="_blank" rel="noopener" class="btn btn-ghost">LI Objectives (DLI-01)</a>
+          <a href="assets/docs/BLI02_Organization_Response_Form.pdf" target="_blank" rel="noopener" class="btn btn-ghost">BLI-02 Reply Form</a>
+        </div>
+      </div>
+
+      <dl class="facts">
+        <div class="fact"><dt>Candidate</dt><dd>Muhammad Aiman bin Jamaluddin</dd></div>
+        <div class="fact"><dt>Programme</dt><dd>Bachelor of Computer Science (Hons.) CS230, UiTM</dd></div>
+        <div class="fact"><dt>Duration</dt><dd>15 March 2027 – 18 June 2027 (14 Weeks)</dd></div>
+        <div class="fact"><dt>Target Roles</dt><dd>AI / Machine Learning, Data Science, or Full-Stack Software Intern</dd></div>
+        <div class="fact"><dt>Locations</dt><dd>Klang Valley (Shah Alam / KL) &amp; Kuantan, Pahang</dd></div>
+        <div class="fact"><dt>Reference</dt><dd>Available on request</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec wrap" id="contact" style="padding-top:0">
+  <div class="sec-head">
+    <div>
+      <p class="eyebrow rise">Get in Touch</p>
+      <h2 class="rise">Direct Contact &amp; Official Links</h2>
+    </div>
+    <p class="rise">Send a quick message below via WhatsApp or Email, or connect directly on LinkedIn and GitHub.</p>
+  </div>
+
+  <div class="contact-grid">
+    <form class="form rise" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="f-name">Your name / organization</label>
+          <input type="text" id="f-name" name="name" required placeholder="e.g. Sarah Lim — Engineering Manager">
+        </div>
+        <div class="field">
+          <label for="f-contact">Your email or phone</label>
+          <input type="text" id="f-contact" name="contact" required placeholder="sarah@company.com">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-type">Internship track</label>
+        <select id="f-type" name="role">
+          <option value="AI / Machine Learning / Data Science Intern">AI / Machine Learning / Data Science Intern</option>
+          <option value="Software / Full-Stack Engineering Intern">Software / Full-Stack Engineering Intern</option>
+          <option value="General Inquiry / Project Discussion">General Inquiry / Project Discussion</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" required placeholder="Hi Aiman, we're reviewing candidates for our March–June 2027 internship intake..."></textarea>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button type="submit" class="btn" id="form-submit">Send via WhatsApp ↗</button>
+        <button type="button" class="btn btn-ghost" id="form-email-btn">Send via Email ↗</button>
+      </div>
+    </form>
+
+    <aside class="side-card rise">
+      <h3>Direct Channels &amp; Documents</h3>
+      <a class="side-link" href="mailto:aiman_jamaluddin@outlook.com">
+        <span><b>Email</b><em>aiman_jamaluddin@outlook.com</em></span><i aria-hidden="true"></i>
+      </a>
+      <a class="side-link" href="https://wa.me/601139910856?text=Hi%20Aiman%2C%20I%20saw%20your%20CS%20portfolio%20and%20would%20like%20to%20discuss%20an%20internship%20placement." target="_blank" rel="noopener">
+        <span><b>WhatsApp / Phone</b><em>+60 11-3991 0856</em></span><i aria-hidden="true"></i>
+      </a>
+      <a class="side-link" href="https://www.linkedin.com/in/aiman-jamaluddin-346455448/" target="_blank" rel="noopener">
+        <span><b>LinkedIn</b><em>linkedin.com/in/aiman-jamaluddin-346455448</em></span><i aria-hidden="true"></i>
+      </a>
+      <a class="side-link" href="https://github.com/CaribbeanGreen" target="_blank" rel="noopener">
+        <span><b>GitHub</b><em>github.com/CaribbeanGreen</em></span><i aria-hidden="true"></i>
+      </a>
+      <a class="side-link" href="assets/docs/Muhammad_Aiman_Jamaluddin_Resume.pdf" target="_blank" rel="noopener">
+        <span><b>Resume (PDF)</b><em>Download Standard Resume</em></span><i aria-hidden="true"></i>
+      </a>
+      <a class="side-link" href="assets/docs/Surat_Permohonan_LI.pdf" target="_blank" rel="noopener">
+        <span><b>Official UiTM Letter</b><em>Surat Permohonan LI (15 Mar – 18 Jun 2027)</em></span><i aria-hidden="true"></i>
+      </a>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <span>© <span id="yr"></span> Muhammad Aiman bin Jamaluddin · UiTM Computer Science (Hons.)</span>
+  <span class="foot-links">
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#preview">Live Lab</a>
+    <a href="#experience">Experience</a>
+    <a href="assets/docs/Muhammad_Aiman_Jamaluddin_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="https://www.linkedin.com/in/aiman-jamaluddin-346455448/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/CaribbeanGreen" target="_blank" rel="noopener">GitHub</a>
+  </span>
+  <span>Klang Valley &amp; Kuantan, Malaysia</span>
+</footer>
+
+<script src="anatomical3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
