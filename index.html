@@ -253,9 +253,10 @@
         <li>Implemented a <strong>Random Forest from scratch in NumPy</strong>, forecasting daily ridership across 21 districts on <strong>2.2M hourly trip records (2023–2026)</strong> joined with Malaysia public holidays, DOSM demographics, and Open-Meteo weather.</li>
         <li>Cut network-level forecast error to <strong>4.1% MAPE</strong> on May–Dec 2025 test data vs <strong>6.4%</strong> naive baseline (<strong>6.7% vs 9.4%</strong> on festive days).</li>
         <li>Explained every prediction with <strong>TreeSHAP</strong> (also written from scratch in NumPy) verified against brute-force Shapley values; showed festive weeks and holiday eves raise ridership while Ramadan lowers it.</li>
-        <li>Built a live web dashboard with 2026 holdout evaluation, live weather fetch, and SHAP feature-contribution charts.</li>
+        <li>Built a live web dashboard with 2026 holdout evaluation, live weather fetch, and SHAP feature-contribution charts, self-hosted on a home server and refreshing its forecast automatically every day.</li>
       </ul>
       <div class="proj-links">
+        <a href="https://ets.aimanjamal.com" target="_blank" rel="noopener">Live Dashboard ↗</a>
         <a href="https://github.com/CaribbeanGreen/KTMB-ETS-Ridership-XAI" target="_blank" rel="noopener">GitHub Repository ↗</a>
         <a href="assets/docs/KTMB_ETS_Ridership_XAI_Slides.pdf" target="_blank" rel="noopener">Presentation Slides (PDF) ↗</a>
         <a href="#preview" data-jump-chip="xai">Test Live Simulator ↓</a>
