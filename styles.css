@@ -831,6 +831,36 @@ html[data-theme="light"] .theme .i-moon { display: block; }
   text-decoration: underline;
 }
 
+/* "Live Dashboard" on a project card: filled button + soft ring that ripples outward.
+   Reduced-motion visitors get the static ring only (global rule switches animations off). */
+.proj-links a.btn-live {
+  color: var(--btn-ink);
+  font-size: 12.5px;
+  padding: 8px 16px;
+  align-self: center;
+  box-shadow: 0 0 0 4px var(--accent-quiet);
+  animation: live-ring 2.4s ease-out infinite;
+}
+
+.proj-links a.btn-live::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.proj-links a.btn-live:hover {
+  color: var(--btn-ink);
+  text-decoration: none;
+}
+
+@keyframes live-ring {
+  0% { box-shadow: 0 0 0 0 var(--accent-edge), 0 0 0 4px var(--accent-quiet); }
+  70% { box-shadow: 0 0 0 14px transparent, 0 0 0 4px var(--accent-quiet); }
+  100% { box-shadow: 0 0 0 0 transparent, 0 0 0 4px var(--accent-quiet); }
+}
+
 /* Archive Rows (.more) */
 .more {
   margin-top: 24px;
