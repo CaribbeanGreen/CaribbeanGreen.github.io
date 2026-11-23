@@ -1,1 +1,4 @@
 .netlify/
+
+# Local exports, never publish (contain referee details)
+Claude outputs/

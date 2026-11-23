@@ -4,7 +4,7 @@ Personal portfolio and interactive engineering showcase for **Muhammad Aiman bin
 
 - **Industrial Training Availability**: `15 March 2027 – 18 June 2027` (14 Weeks)
 - **Target Roles**: Software, Data, or AI Engineering Intern
-- **Preferred Locations**: Klang Valley (Shah Alam / Kuala Lumpur) & Kuantan, Pahang
+- **Preferred Locations**: Klang Valley (Petaling Jaya / Shah Alam), LRT / MRT-accessible
 
 ## Features
 - **Interactive Engineering Workbench**:
