@@ -1669,3 +1669,71 @@ footer a:hover {
     transform: none;
   }
 }
+
+/* ============================================================
+   Benteng Siber: Gold Award (AIMIX: IID 2026)
+   ============================================================ */
+.award-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.award-pills .award-pill { margin-bottom: 0; }
+.award-pill-gold { border-color: rgba(255, 214, 74, 0.55); background: rgba(255, 214, 74, 0.1); }
+.award-pill-gold:hover { border-color: var(--gold); }
+.award-medal.gold {
+  color: #4a3405;
+  background: radial-gradient(circle at 35% 30%, #fff6c8, #f2c14e 55%, #b07d12);
+}
+.award-card-gold { border-color: rgba(255, 214, 74, 0.5); }
+.cert-links a.btn-live { color: var(--btn-ink); box-shadow: 0 0 0 4px var(--accent-quiet); animation: live-ring 2.4s ease-out infinite; }
+.cert-links a.btn-live:hover { color: var(--btn-ink); text-decoration: none; }
+
+.bs-card { border-color: rgba(255, 214, 74, 0.45); }
+.bs-visual { background: linear-gradient(145deg, rgba(11, 27, 58, 0.95), rgba(32, 22, 6, 0.95)); }
+
+.chip.chip-gold { border-color: rgba(255, 214, 74, 0.5); }
+.chip.chip-gold[aria-selected="true"] { border-color: var(--gold); }
+.wb-badge.wb-badge-gold { background: rgba(255, 214, 74, 0.15); color: var(--gold); }
+
+.wb-grid.bs-grid { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.5fr); }
+@media (max-width: 720px) {
+  .wb-grid.bs-grid { grid-template-columns: 1fr; }
+}
+.bs-reel-box { display: flex; flex-direction: column; align-items: center; }
+.bs-reel {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 9 / 16;
+  border-radius: 10px;
+  background: #0b1b3a;
+  border: 1px solid rgba(255, 214, 74, 0.35);
+}
+.bs-frame {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #0b1b3a, #1a1206);
+  border: 1px solid rgba(255, 214, 74, 0.3);
+}
+.bs-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.bs-launch {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  padding: 18px;
+  text-align: center;
+}
+.bs-launch p { margin: 0; max-width: 34ch; color: #d9e2f2; font-size: 14px; line-height: 1.5; }
+.bs-launch small { font-family: var(--mono); font-size: 11px; color: #94A3B8; }
+.mini-pill.bs-load {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0;
+  color: #241703;
+  background: var(--gold);
+  cursor: pointer;
+}
+.mini-pill.bs-load:hover { filter: brightness(1.08); }

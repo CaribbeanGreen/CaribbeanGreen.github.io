@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPulseLift3D();
   initPantunLab();
   initParserLab();
+  initBentengLab();
   initContactForm();
 });
 
@@ -388,6 +389,23 @@ function initBrowserWorkbench() {
       stack: 'Java Swing · SableCC · LL(1)',
       link: 'assets/docs/CSC569_Recursive_Descent_Parser_Report.pdf',
       cta: 'Read full technical report (PDF) ↗'
+    },
+    benteng: {
+      tab: 'Benteng Siber — AI Cyber RPG',
+      base: 'https://',
+      url: 'benteng-siber.vercel.app',
+      fav: '#F2C14E',
+      viewId: 'view-benteng',
+      spec: [
+        'AI scammer powered by the Claude API that changes tactics as the player replies',
+        'Semak Mesej: paste a real message or screenshot for a 0–100 risk score and red flags',
+        'Built-in offline engine keeps every mode playable without internet',
+        'API key stays on Vercel serverless functions, never in the browser'
+      ],
+      time: '11 areas · 10+ mini-games · 6 bosses',
+      stack: 'React · TypeScript · Phaser 3 · Claude API',
+      link: 'https://benteng-siber.vercel.app',
+      cta: 'Play the live game ↗'
     }
   };
 
@@ -407,7 +425,16 @@ function initBrowserWorkbench() {
     });
 
     document.getElementById('b-tab').textContent = p.tab;
+    document.getElementById('b-base').textContent = p.base || 'https://github.com/CaribbeanGreen/';
     document.getElementById('b-url').textContent = p.url;
+
+    // Leaving the Benteng Siber tab: stop the reel and unload the game so its audio stops
+    if (key !== 'benteng') {
+      const reel = document.getElementById('bsReel');
+      if (reel && !reel.paused) reel.pause();
+      const frame = document.getElementById('bsFrame');
+      if (frame && frame.querySelector('iframe') && window.bsReset) window.bsReset();
+    }
     document.getElementById('b-fav').style.background = p.fav;
 
     document.getElementById('d-spec').innerHTML = p.spec.map((s) => `<li>${s}</li>`).join('');
@@ -868,4 +895,31 @@ function initContactForm() {
       window.location.href = `mailto:aiman_jamaluddin@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
+}
+
+
+/* ============================================================
+   View 5: Benteng Siber (Gold Award, AIMIX: IID 2026)
+   The real game loads into an iframe only when asked, so the page stays light.
+   ============================================================ */
+function initBentengLab() {
+  const frame = document.getElementById('bsFrame');
+  const loadBtn = document.getElementById('bsLoad');
+  if (!frame || !loadBtn) return;
+  const launcher = frame.innerHTML;
+
+  function load() {
+    const reel = document.getElementById('bsReel');
+    if (reel && !reel.paused) reel.pause();
+    frame.innerHTML = '<iframe src="https://benteng-siber.vercel.app" title="Benteng Siber game" allow="autoplay; fullscreen; clipboard-write" allowfullscreen loading="lazy"></iframe>';
+    frame.classList.add('is-live');
+  }
+
+  window.bsReset = () => {
+    frame.innerHTML = launcher;
+    frame.classList.remove('is-live');
+    document.getElementById('bsLoad')?.addEventListener('click', load);
+  };
+
+  loadBtn.addEventListener('click', load);
 }

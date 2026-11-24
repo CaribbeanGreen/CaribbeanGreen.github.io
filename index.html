@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2026-11-23" />
+<link rel="stylesheet" href="styles.css?v=2026-11-24" />
 </head>
 <body>
 
@@ -64,7 +64,10 @@
 <section class="hero wrap">
   <div class="hero-in">
     <div>
-      <a href="#awards" class="award-pill rise"><span class="award-medal" aria-hidden="true">2</span>2nd Place · International Innovation Product Competition 2026</a>
+      <div class="award-pills rise">
+        <a href="#award-aimix" class="award-pill award-pill-gold"><span class="award-medal gold" aria-hidden="true">★</span>Gold Award · AIMIX: IID 2026 (Benteng Siber)</a>
+        <a href="#awards" class="award-pill"><span class="award-medal" aria-hidden="true">2</span>2nd Place · International Innovation Product Competition 2026</a>
+      </div>
       <p class="eyebrow rise">Muhammad Aiman bin Jamaluddin · Bachelor of Computer Science (Hons.)</p>
       <h1 class="rise">Machine Learning,<br>Explainable AI &amp;<br><em>Full-Stack Systems.</em></h1>
       <p class="hero-sub rise">
@@ -264,6 +267,45 @@
     </div>
   </article>
 
+  <!-- Benteng Siber: AI-powered cybersecurity game (Gold Award, AIMIX: IID 2026) -->
+  <article class="fyp-card bs-card rise">
+    <div class="fyp-visual bs-visual">
+      <div>
+        <span class="flag warm">Gold Award · AIMIX: IID 2026</span>
+        <h3 style="font-size:26px;margin-top:14px;color:#fff">Benteng Siber — AI-Powered Cybersecurity RPG</h3>
+        <p style="margin-top:10px;font-size:14px;color:#c9d4e8">
+          React · TypeScript · Phaser 3 · Claude API · Vercel
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="background:rgba(0,0,0,0.35);padding:14px;border-radius:10px;border:1px solid var(--line)">
+          <div style="font-family:var(--display);font-size:26px;font-weight:800;color:var(--gold)">RM2.97B</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">lost to scams in MY, 2025*</div>
+        </div>
+        <div style="background:rgba(0,0,0,0.35);padding:14px;border-radius:10px;border:1px solid var(--line)">
+          <div style="font-family:var(--display);font-size:26px;font-weight:800;color:var(--accent)">10+ games</div>
+          <div style="font-family:var(--mono);font-size:11px;color:var(--text-muted)">11 areas · 6 bosses · 5 endings</div>
+        </div>
+      </div>
+    </div>
+    <div class="fyp-body">
+      <span class="eyebrow">02 / AI Game · Team of 5</span>
+      <h3>Benteng Siber: Practise Spotting Scams in a Free Browser RPG</h3>
+      <ul class="resume-bullets">
+        <li>A pixel-art RPG for Malaysians aged 13+: players join a Cyber Unit and practise spotting scams through repetition, not reading.</li>
+        <li>An <strong>AI scammer powered by the Claude API</strong> changes tactics as the player replies, and <strong>Semak Mesej</strong> gives any real message a 0–100 risk score with red flags and the NSRC 997 hotline.</li>
+        <li>Three difficulty levels teach the same lessons, an offline engine keeps every mode playable without internet, and the API key stays on Vercel serverless functions.</li>
+        <li><strong>My role:</strong> UI/UX designer for the team; the project won a <strong>Gold Award</strong> at AIMIX: IID 2026.</li>
+      </ul>
+      <div class="proj-links">
+        <a href="https://benteng-siber.vercel.app" target="_blank" rel="noopener" class="btn btn-live">Play the Game ↗</a>
+        <a href="assets/awards/Benteng_Siber_AIMIX_2026_Poster_A3.pdf" target="_blank" rel="noopener">Competition Poster (PDF) ↗</a>
+        <a href="#preview" data-jump-chip="benteng">Watch Award Reel ↓</a>
+      </div>
+      <p style="margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--text-muted)">*Ministry of Home Affairs (KDN), via Bernama, 24 June 2026.</p>
+    </div>
+  </article>
+
   <!-- 2 & 3: Pantun Coherence + PulseLift PWA -->
   <div class="proj-grid-2">
     <article class="proj-card rise">
@@ -396,7 +438,7 @@
       <p class="eyebrow rise">Interactive Engineering Lab</p>
       <h2 class="rise">Test My Models Live in Your Browser</h2>
     </div>
-    <p class="rise">Switch tabs below to run interactive versions of my Final Year Project, NLP model, 3D PWA engine, and LL(1) compiler.</p>
+    <p class="rise">Switch tabs below to run interactive versions of my Final Year Project, NLP model, 3D PWA engine, and LL(1) compiler, or play our Gold Award game.</p>
   </div>
 
   <div class="picker rise" role="tablist" aria-label="Interactive project selector">
@@ -404,6 +446,7 @@
     <button class="chip" role="tab" data-key="pantun" aria-selected="false">02 · Pantun LaBSE Coherence</button>
     <button class="chip" role="tab" data-key="pulselift" aria-selected="false">03 · PulseLift 3D Muscle PWA</button>
     <button class="chip" role="tab" data-key="parser" aria-selected="false">04 · LL(1) Arabic &amp; Latin Parser</button>
+    <button class="chip chip-gold" role="tab" data-key="benteng" aria-selected="false">05 · Benteng Siber AI Game ★</button>
   </div>
 
   <div class="stage rise">
@@ -417,7 +460,7 @@
         <span class="nav-arrows"><span>←</span><span>→</span><span>↻</span></span>
         <span class="url">
           <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg>
-          https://github.com/CaribbeanGreen/<b id="b-url">KTMB-ETS-Ridership-XAI</b>
+          <span id="b-base">https://github.com/CaribbeanGreen/</span><b id="b-url">KTMB-ETS-Ridership-XAI</b>
         </span>
       </div>
 
@@ -606,6 +649,44 @@ Budi yang baik dikenang juga.</textarea>
           </div>
         </div>
       </div>
+
+      <!-- View 5: Benteng Siber (Gold Award, AIMIX: IID 2026) -->
+      <div class="wb-view" id="view-benteng">
+        <div class="wb-top">
+          <div>
+            <span class="wb-badge wb-badge-gold">Gold Award · AIMIX: IID 2026 · Team Project</span>
+            <h3 style="margin-top:8px;font-size:21px">Benteng Siber: AI-Powered Cybersecurity RPG</h3>
+          </div>
+          <div style="text-align:right">
+            <div class="wb-kpi">Anugerah Emas</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#94A3B8">Kategori IPT · 21 Nov 2026</div>
+          </div>
+        </div>
+
+        <div class="wb-grid bs-grid">
+          <div class="wb-box bs-reel-box">
+            <h4>Award Reel</h4>
+            <video id="bsReel" class="bs-reel" controls playsinline preload="none" poster="assets/media/benteng-siber-gold-cover.jpg" aria-label="Benteng Siber Gold Award reel">
+              <source src="assets/media/benteng-siber-gold-reel.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="wb-box">
+            <h4>Play the Real Game Here</h4>
+            <div class="bs-frame" id="bsFrame">
+              <div class="bs-launch">
+                <p>The full game runs in this window: walk the town, take scam calls, sort phishing letters and defend your home network.</p>
+                <button type="button" id="bsLoad" class="mini-pill bs-load">▶ Load Benteng Siber</button>
+                <small>Loads benteng-siber.vercel.app · sound on · works on phones</small>
+              </div>
+            </div>
+            <div class="mini-pills" style="margin-top:10px">
+              <a class="mini-pill" href="https://benteng-siber.vercel.app" target="_blank" rel="noopener">Open full screen ↗</a>
+              <a class="mini-pill" href="assets/awards/Benteng_Siber_AIMIX_2026_Poster_A3.pdf" target="_blank" rel="noopener">Competition poster (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <aside class="spec">
@@ -625,8 +706,38 @@ Budi yang baik dikenang juga.</textarea>
       <p class="eyebrow rise">Track Record</p>
       <h2 class="rise">Awards, Experience &amp; Education</h2>
     </div>
-    <p class="rise">International competition award, a 6-month industry internship in software development &amp; IT support, and Computer Science training at UiTM.</p>
+    <p class="rise">Two competition awards in November 2026, a 6-month industry internship in software development &amp; IT support, and Computer Science training at UiTM.</p>
   </div>
+
+  <!-- Award: AIMIX IID 2026 (Gold) -->
+  <article class="exp-card award-card award-card-gold rise" id="award-aimix">
+    <div class="award-in">
+      <div>
+        <div class="exp-top">
+          <div>
+            <span class="eyebrow">Award · Gold</span>
+            <h3 class="exp-role" style="margin-top:6px">Gold Award (Anugerah Emas) — Benteng Siber</h3>
+            <div class="exp-company">AIMIX: IID 2026 · AI, Multimedia &amp; Innovation Exhibition, AISA, UiTM Cawangan Melaka, Kampus Jasin</div>
+          </div>
+          <span class="exp-date">21 Nov 2026</span>
+        </div>
+        <ul class="resume-bullets" style="margin-top:18px">
+          <li>Team <strong>Benteng Siber</strong> (UiTM Cawangan Terengganu, Kampus Kuala Terengganu) received a <strong>Gold Award in the IPT category</strong> for an AI-powered cybersecurity game that lets Malaysians aged 13+ practise spotting scams.</li>
+          <li>The game is free in the browser: <strong>11 areas, 10+ mini-games, 6 bosses and 5 endings</strong>, with an AI scammer and a real-message risk checker powered by the <strong>Claude API</strong>.</li>
+          <li><strong>My part:</strong> UI/UX designer on a team of five, mentored by Ts. Dr. Hasiah Mohamed.</li>
+        </ul>
+        <div class="cert-links">
+          <a href="https://benteng-siber.vercel.app" target="_blank" rel="noopener" class="btn btn-live">Play the game ↗</a>
+          <a href="#preview" data-jump-chip="benteng" class="btn btn-ghost">Watch the award reel ↓</a>
+          <a href="assets/awards/Benteng_Siber_AIMIX_2026_Poster_A3.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Competition poster (PDF) ↗</a>
+          <a href="assets/awards/AIMIX_IID_2026_Certificate_of_Participation.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Certificate of participation (PDF) ↗</a>
+        </div>
+      </div>
+      <a class="award-poster" href="assets/awards/aimix-iid-2026-gold-results.jpg" target="_blank" rel="noopener" title="Official AIMIX: IID 2026 Anugerah Emas results (AISA)">
+        <img src="assets/awards/aimix-iid-2026-gold-results.jpg" alt="Official AIMIX: IID 2026 Anugerah Emas results, Kategori IPT, listing Benteng Siber among the Gold Award winners" width="1280" height="1600" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </article>
 
   <!-- Award: Expo Vokasi 2026 -->
   <article class="exp-card award-card rise" id="awards">
@@ -840,6 +951,6 @@ Budi yang baik dikenang juga.</textarea>
 </footer>
 
 <script src="anatomical3d.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=2026-11-24"></script>
 </body>
 </html>
